@@ -1,0 +1,55 @@
+body {
+  background-image:url("images/artjungle bkgd color only.svg");
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+canvas {
+  display: block;
+}
+
+footer {
+     position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: right;
+
+
+}
+
+
+.imgstyle {
+     width: 75%;
+            height: auto;
+              display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+
+
+h1 {
+  color: blue;
+}
+h3 {
+  color: pink;
+  text-align: right;
+  padding-right: 10%;
+    font-family: "Trirong", serif;
+    font-size: 25px;
+}
+p {
+  color: darkslategray;
+  font-family: "Trirong", serif;
+  padding-right: 10%;
+  font-size: 12px;
+}
+pre {
+  color: white;
+}
