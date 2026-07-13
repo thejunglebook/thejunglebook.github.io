@@ -34,7 +34,7 @@ function draw() {
 
     //Slowly increase 'a' and then animate 's' with
   //a smooth cyclical motion by finding the cosine of 'a'
-  a = a + 0.02;
+  a = a + 0.01;
   s = cos(a) * 1.5;
 
   translate(width / 2, height / 2);
@@ -45,12 +45,12 @@ function draw() {
   translate(windowWidth/1.5,windowHeight/1.5);
   noFill();
   // stroke(255);
-  stroke(78, 77, 120);
+  stroke(144, 122, 204);
   strokeWeight(1);
   ellipse(centre.x,centre.y,100);
   ellipse(border.x,border.y,2.5);
   // stroke(255, 50);
-  stroke(78, 77, 120);
+  stroke(62, 40, 122);
   strokeWeight(.25);
   rect(border.x*2,border.y, 7);
   // rect(border.x,border.y*2, 5/border.x);
