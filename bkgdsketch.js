@@ -40,6 +40,7 @@ function draw() {
   translate(width / 2, height / 2);
   scale(s);
   fill(0,0,0,15);
+    stroke(62, 40, 122);
   ellipse(0, 0, 200, 200);
 
   translate(windowWidth/1.5,windowHeight/1.5);
@@ -51,7 +52,8 @@ function draw() {
   ellipse(border.x,border.y,2.5);
   // stroke(255, 50);
   stroke(62, 40, 122);
-  strokeWeight(.25);
+  strokeWeight(.5);
+    stroke(134, 7, 237);
   rect(border.x*2,border.y, 7);
   // rect(border.x,border.y*2, 5/border.x);
   time++;

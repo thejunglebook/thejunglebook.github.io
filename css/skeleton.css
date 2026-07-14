@@ -1,0 +1,1064 @@
+/*
+* Skeleton V2.0.4
+* Copyright 2014, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 12/29/2014
+*/
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- Grid
+- Base Styles
+- Typography
+- Links
+- Buttons
+- Forms
+- Lists
+- Code
+- Tables
+- Spacing
+- Utilities
+- Clearing
+- Media Queries
+*/
+body {
+  background-color: black;
+}
+
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0;
+  }
+}
+
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%;
+  }
+
+  .column,
+  .columns {
+    margin-left: 4%;
+  }
+
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0;
+  }
+
+  .one.column,
+  .one.columns {
+    width: 4.66666666667%;
+  }
+
+  .two.columns {
+    width: 13.3333333333%;
+  }
+
+  .three.columns {
+    width: 32%;
+  }
+
+  .four.columns {
+    width: 30.6666666667%;
+  }
+
+  .five.columns {
+    width: 39.3333333333%;
+  }
+
+  .six.columns {
+    width: 48%;
+  }
+
+  .seven.columns {
+    width: 56.6666666667%;
+  }
+
+  .eight.columns {
+    width: 65.3333333333%;
+  }
+
+  .nine.columns {
+    width: 74.0%;
+  }
+
+  .ten.columns {
+    width: 82.6666666667%;
+  }
+
+  .eleven.columns {
+    width: 91.3333333333%;
+  }
+
+  .twelve.columns {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .one-third.column {
+    width: 30.6666666667%;
+  }
+
+  .two-thirds.column {
+    width: 65.3333333333%;
+  }
+
+  .one-half.column {
+    /* width: 50%; */
+    padding: none;
+  }
+
+  /* Offsets */
+  .offset-by-one.column,
+  .offset-by-one.columns {
+    margin-left: 8.66666666667%;
+  }
+
+  .offset-by-two.column,
+  .offset-by-two.columns {
+    margin-left: 17.3333333333%;
+  }
+
+  .offset-by-three.column,
+  .offset-by-three.columns {
+    margin-left: 26%;
+  }
+
+  .offset-by-four.column,
+  .offset-by-four.columns {
+    margin-left: 34.6666666667%;
+  }
+
+  .offset-by-five.column,
+  .offset-by-five.columns {
+    margin-left: 43.3333333333%;
+  }
+
+  .offset-by-six.column,
+  .offset-by-six.columns {
+    margin-left: 52%;
+  }
+
+  .offset-by-seven.column,
+  .offset-by-seven.columns {
+    margin-left: 60.6666666667%;
+  }
+
+  .offset-by-eight.column,
+  .offset-by-eight.columns {
+    margin-left: 69.3333333333%;
+  }
+
+  .offset-by-nine.column,
+  .offset-by-nine.columns {
+    margin-left: 78.0%;
+  }
+
+  .offset-by-ten.column,
+  .offset-by-ten.columns {
+    margin-left: 86.6666666667%;
+  }
+
+  .offset-by-eleven.column,
+  .offset-by-eleven.columns {
+    margin-left: 95.3333333333%;
+  }
+
+  .offset-by-one-third.column,
+  .offset-by-one-third.columns {
+    margin-left: 34.6666666667%;
+  }
+
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns {
+    margin-left: 69.3333333333%;
+  }
+
+  .offset-by-one-half.column,
+  .offset-by-one-half.columns {
+    margin-left: 52%;
+  }
+}
+
+@media (min-width: 750px) {
+  .container {
+    width: 85%;
+    padding: 0;
+  }
+
+  .three.columns {
+    width: 22%;
+  }
+
+  .slider {
+    width: 400px;
+    text-align: center;
+    overflow: scroll;
+  }
+}
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* NOTE
+html is set to 62.5% so that all the REM measurements throughout Skeleton
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+html {
+  font-size: 58%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.5em;
+  /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #fff;
+}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 4.0rem;
+  line-height: 1.2;
+  letter-spacing: -.1rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  line-height: 1.25;
+  letter-spacing: -.1rem;
+}
+
+h3 {
+  font-size: 3.0rem;
+  line-height: 1.3;
+  letter-spacing: -.1rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: 2rem;
+}
+
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: .75rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h1 {
+    font-size: 5.0rem;
+  }
+
+  h2 {
+    font-size: 4.2rem;
+  }
+
+  h3 {
+    font-size: 3.6rem;
+  }
+
+  h4 {
+    font-size: 3.0rem;
+  }
+
+  h5 {
+    font-size: 2.4rem;
+  }
+
+  h6 {
+    font-size: 1.5rem;
+  }
+}
+
+p {
+  margin-top: 0;
+}
+
+/* Links
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+a {
+  /* color: #1EAEDB;  */
+  /* color: #4c7191; */
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4c8e91;
+}
+
+.activelink {
+  color: #9977ba;
+}
+
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  color: #fff;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #addfe4;
+  border-color: #093548;
+  outline: 0;
+}
+
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
+  background-color: #33C3F0;
+  border-color: #33C3F0;
+}
+
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #FFF;
+  background-color: #1EAEDB;
+  border-color: #1EAEDB;
+}
+
+/* Forms
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  color: black;
+  height: 38px;
+  padding: 6px 10px;
+  /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  box-shadow: none;
+  box-sizing: border-box;
+}
+
+/* Removes awkward default styles on some inputs for iOS */
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #33C3F0;
+  outline: 0;
+}
+
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+
+fieldset {
+  padding: 0;
+  border-width: 0;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+}
+
+label>.label-body {
+  display: inline-block;
+  margin-left: .5rem;
+  font-weight: normal;
+}
+
+/* Lists
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+ul {
+  list-style: circle inside;
+}
+
+ol {
+  list-style: decimal inside;
+}
+
+ol, ul {
+  padding-left: 0;
+  margin-top: 0;
+}
+
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #F1F1F1;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+}
+
+pre>code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre;
+}
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+
+/* Spacing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+button,
+.button {
+  margin-bottom: 1rem;
+}
+
+input,
+textarea,
+select,
+fieldset {
+  margin-bottom: 1.5rem;
+}
+
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+  margin-bottom: 2.5rem;
+}
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.u-pull-right {
+  float: right;
+}
+
+.u-pull-left {
+  float: left;
+}
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1;
+}
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/* Self Clearing Goodness */
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it
+there.
+*/
+/* Larger than mobile */
+@media (min-width: 900px) {}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {}
+
+@media (max-width: 550px) {
+  .navbar a {
+    line-height: 50px;
+  }
+
+  .row {
+    padding-top: 20%;
+  }
+}
+
+/* hamburger menu */
+/* @media screen and (max-width: 894px) {
+  .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: center;
+      display: block;
+    }
+} */
+@media screen and (min-width: 1350px) {
+
+  /* hamburger menu */
+  /* .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  } */
+  .one-half.column {
+    padding-top: 30px;
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 894px) {
+  .slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    /*
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-type: mandatory;
+    */
+  }
+
+  .artistbio {
+    /* background-color: #000000; */
+    width: windowWidth/2;
+    height: 400px;
+    overflow: auto;
+  }
+
+  /* styling for hamburger menu; reference: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav  */
+  /* .navbar .icon {
+    display: none;
+  } */
+}
+
+@media (min-width: 800px) {
+  .artistbio {
+    overflow: hidden;
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .artistbio {
+    overflow: hidden;
+  }
+
+  .one-half.column {
+    /* width: 50%; */
+    /* padding: 60px; */
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  .artistbio {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1350px) {
+  /* .navbar {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
+  .navbar a {
+    display: block;
+  } */
+}
+
+.artiststatement {
+  /* opacity: 65%; */
+  opacity: 100%;
+  /* background-color: #000000; */
+  /* padding: 15px; */
+  /* width: windowWidth/2; */
+  /* height: 350px; */
+  overflow: auto;
+}
+
+.projects>img {
+  /* styling images in these boxes: setting the order they should be displayed;
+	images align to center of box; max-width of each image can't exceed 300px; */
+  order: -1;
+  align-self: center;
+  /* max-width: 100px; */
+}
+
+/* enlarge images when hovering over */
+.projects>a>img:hover {
+  position: relative;
+  transform: scale(1.15);
+  /* display:block; */
+}
+
+.projects>a>img {
+  /* styling images in these boxes: setting the order they should be displayed;
+	images align to center of box; max-width of each image can't exceed 300px; */
+  /* order: -1; */
+  align-self: center;
+  max-width: 100px;
+  /* margin-left: -20px;
+	margin-top: -15px; */
+}
+
+/* -------------------------------carousel---------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+.slider {
+  width: 1000px;
+  text-align: center;
+  overflow: hidden;
+  /* margin-top: 5%; */
+}
+
+.slides {
+  /* display: flex;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; */
+  /*
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+  */
+}
+
+#slide-1:hover {
+  /* transform: scale(1.05); */
+  border-radius: 0%;
+  transition: all .5s ease;
+  /* background-color: rgba(255, 255, 255, 0.5);
+  color: black; */
+}
+
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+  background: white;
+  /* border: solid black 20px; */
+  /* border-radius: 20%; */
+}
+
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+  box-shadow: inset 0 0 0px grey;
+}
+
+.slides::-webkit-scrollbar-thumb:hover {
+  background: #4c7191;
+}
+
+.slides>div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 400px;
+  height: 400px;
+  margin-right: 50px;
+  border-radius: 50%;
+  /* background: #eee; */
+  border: solid white 1px;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 100px; */
+}
+
+.slides>div:target {
+  /*   transform: scale(0.8); */
+}
+
+.author-info {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 0.75rem;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.author-info a {
+  color: white;
+}
+
+img {
+  /* object-fit: cover; */
+  /* position: absolute; */
+  top: 0;
+  left: 0;
+  width: 50%;
+  /* height: 50%; */
+  /* border: solid white 1px; */
+  /* border-radius: 50%; */
+  padding: 5px;
+}
+
+audio {
+  /* border-radius: 50%; */
+  /* width: 75%; */
+  /* margin: 40px; */
+  /* padding: 5px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.slider>a {
+  display: inline;
+  flex-shrink: 1;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: black;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  /* border-radius: 50%; */
+  /* border: solid white 1px; */
+  padding: 5px;
+  /* margin: 0 0 1rem 0; */
+  margin: 4rem 4rem 4rem 4rem;
+  position: relative;
+}
+
+.slider>a:active {
+  top: 1px;
+}
+
+.slider>a:focus {
+  background: #000;
+}
+
+/* Don't need button navigation */
+@supports (scroll-snap-type) {
+  .slider>a {
+    display: none;
+  }
+}
+
+details {
+  /* border: 1px solid #aaa; */
+  /* border-radius: 4px; */
+  padding: 2em 10em 0;
+  font-size: 10px;
+  overflow: auto;
+  max-height: 80px;
+}
+
+summary {
+  font-weight: bold;
+  margin: -.5em -.5em 0;
+  padding: .5em;
+  /* text-decoration: underline; */
+  /* color: #4c7191; */
+  font-size: 12px;
+  color: white;
+  /* letter-spacing: .1rem; */
+  /* text-transform: uppercase; */
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+summary:hover {
+  /* color: #4c8e91; */
+  color: #addfe4;
+  border-color: #093548;
+  outline: 0;
+}
+
+summary:active {
+  /* color: #9977ba; */
+}
+
+details[open] {
+  padding: .75em;
+  max-width: 250px;
+  margin: auto;
+}
+
+details[open] summary {
+  /* border-bottom: 1px solid #aaa; */
+  margin-bottom: .5em;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #4c7191;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #4c8e91;
+  /* height: 5px; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #9977ba;
+}
+
+/* using filtered tags instead of carousel ------------------------ */
+#web:hover {
+  /* transform: scale(1.05); */
+  border-radius: 0%;
+  transition: all .5s ease;
+  /* background-color: rgba(255, 255, 255, 0.5);
+  color: black; */
+}
+
+.filterDiv {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  display: none;
+  width: 440px;
+  height: 440px;
+  /* margin: 20px; */
+  margin-right: 40px;
+  margin-bottom: 40px;
+  border-radius: 50%;
+  border: solid white 1px;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  padding: 40px;
+  padding-top: 75px;
+  justify-content: center;
+  align-items: center;
+}
+
+.show {
+  display: block;
+}
+
+.filterDiv:hover {
+  border-radius: 1%;
+  transition: all .5s ease;
+}
+
+.gallery {
+  margin-top: 20px;
+}
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: #4e4d78;
+  text-align: center;
+}
+
+.navbar a {
+  display: inline;
+  /* background-color: #4e4d78; */
+  /* background-color: white; */
+  padding: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding: 30px;
+}
+
+.centerbook {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  padding: 20px;
+}
+
+.centerlarge {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.hr {
+  color: white;
+}
